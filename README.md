@@ -52,7 +52,7 @@
 ### Открытие проекта в Dev Container
 
 1. Откройте проект в VS Code
-2. Нажмите `F1` и выберите `Dev Containers: Reopen in Container`
+2. Нажмите `CMD+Shift+P` и выберите `Dev Containers: Reopen in Container`
 3. Дождитесь сборки и запуска контейнера
 
 ### SSH Keys
