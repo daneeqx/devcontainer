@@ -1,0 +1,12 @@
+{
+    "id": "protobuf",
+    "name": "Protobuf",
+    "version": "1.0.0",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "pbkit.vscode-pbkit"
+            ]
+        }
+    }
+}

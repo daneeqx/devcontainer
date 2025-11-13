@@ -1,0 +1,24 @@
+{
+    "name": "Daneeqx Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot",
+                "mechatroner.rainbow-csv",
+            ]
+        }
+    },
+    "features": {
+        "./features/base": {},
+        "./features/go": {},
+        "./features/protobuf": {},
+        "./features/ssh": {},
+        "./features/git": {},
+        "./features/dind": {}
+    }
+}

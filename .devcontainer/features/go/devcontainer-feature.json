@@ -1,0 +1,19 @@
+{
+    "name": "Go",
+    "id": "go",
+    "version": "1.0.0",
+    "description": "A go packages",
+    "containerEnv": {
+        "GOPRIVATE": "",
+        "NETRC": "/etc/.netrc"
+    },
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/go:1": {
+            "version": "1.25"
+        }
+    },
+    "installsAfter": [
+        "./features/base"
+    ],
+    
+}

@@ -1,0 +1,13 @@
+{
+    "id": "ssh",
+    "name": "SSH",
+    "version": "1.0.0",
+
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.ssh",
+            "target": "/home/vscode/.ssh",
+            "type": "bind"
+        }
+    ]
+}
