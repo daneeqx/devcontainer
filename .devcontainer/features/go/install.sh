@@ -1,6 +1,6 @@
 #!/usr/bin/bash -e
 cat <<EOF | tee /etc/.netrc > /dev/null
-machine gitlab.nsrv.io
+machine gitlab.com
     login user
     password supersecretpassword
 EOF

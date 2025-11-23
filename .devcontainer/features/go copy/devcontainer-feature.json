@@ -1,0 +1,9 @@
+{
+    "name": "kubectl-helm-minikube",
+    "id": "kubectl-helm-minikube",
+    "version": "1.0.0",
+    "description": "A kubectl, helm, and minikube packages",
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/kubectl-helm-minikube:1.2.2": {}
+    },
+}
