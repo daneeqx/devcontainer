@@ -103,3 +103,5 @@ On container start, `post_start.sh` runs and symlinks persistent dotfiles (`.cla
 **Add a new tool:** create a feature directory under `.devcontainer/features/` with `devcontainer-feature.json` and `install.sh`, then add it to `setup/common/devcontainer-feature.json`.
 
 **Change tool versions:** edit the `version` field in the corresponding feature's `devcontainer-feature.json`.
+
+@daneeqx
