@@ -1,0 +1,16 @@
+{
+    "id": "daneeqx-khm",
+    "name": "Daneeqx KHM",
+    "version": "1.0.0",
+
+    "installsAfter": [
+        "./features/base"
+    ],
+
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/kubectl-helm-minikube:1.2.1": {},
+        "./features/dotfiles": {}
+    },
+
+    "postStartCommand": "/usr/local/bin/setup-kube"
+}

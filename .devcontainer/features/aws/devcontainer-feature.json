@@ -1,0 +1,16 @@
+{
+    "id": "daneeqx-aws",
+    "name": "Daneeqx AWS",
+    "version": "1.0.0",
+
+    "installsAfter": [
+        "./features/base"
+    ],
+
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/aws-cli:1.1.2": {},
+        "./features/dotfiles": {}
+    },
+
+    "postStartCommand": "/usr/local/bin/setup-aws"
+}

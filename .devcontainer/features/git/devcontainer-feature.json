@@ -1,0 +1,12 @@
+{
+    "id": "daneeqx-git",
+    "version": "1.0.0",
+    "name": "Daneeqx Git",
+ 
+    "containerEnv": {},
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+
+    "installsAfter": []
+}

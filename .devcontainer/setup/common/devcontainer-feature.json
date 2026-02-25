@@ -1,0 +1,18 @@
+{
+    "id": "setup-common",
+    "name": "Common setup",
+    "version": "1.0.0",
+
+    "dependsOn": {
+        "./features/aws": {},
+        "./features/base": {},
+        "./features/dind": {},
+        "./features/dotfiles": {},
+        "./features/git": {},
+        "./features/go": {},
+        "./features/kubectl-helm-minikube": {},
+        "./features/nodejs": {},
+        "./features/python": {},
+        "./features/ssh": {}
+    }
+}

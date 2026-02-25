@@ -1,0 +1,13 @@
+{
+    "id": "Daneeqx-protobuf",
+    "name": "Daneeqx Protobuf",
+    "version": "1.0.0",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "pbkit.vscode-pbkit"
+            ]
+        }
+    }
+}

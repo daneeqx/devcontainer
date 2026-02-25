@@ -1,0 +1,11 @@
+{
+    "id": "daneeqx-ssh",
+    "name": "Daneeqx SSH",
+    "version": "1.0.0",
+
+    "dependsOn": {
+        "./features/dotfiles": {}
+    },
+
+    "postStartCommand": "rm -rf /home/vscode/.ssh && ln -s /workspace/.dotfiles/.ssh /home/vscode/.ssh"
+}

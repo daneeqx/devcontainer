@@ -1,0 +1,13 @@
+{
+    "id": "daneeqx-nodejs",
+    "version": "1.0.0",
+    "name": "Daneeqx Node.js",
+ 
+    "containerEnv": {},
+    "dependsOn": {
+        "ghcr.io/stu-bell/devcontainer-features/node:0": {
+        }
+    },
+
+    "installsAfter": []
+}

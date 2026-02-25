@@ -1,0 +1,12 @@
+{
+    "id": "daneeqx-dind",
+    "version": "1.0.0",
+    "name": "Daneeqx DinD",
+ 
+    "containerEnv": {},
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+
+    "installsAfter": []
+}

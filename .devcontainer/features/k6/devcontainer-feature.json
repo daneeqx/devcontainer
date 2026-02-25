@@ -1,0 +1,12 @@
+{
+    "id": "daneeqx-k6",
+    "version": "1.0.0",
+    "name": "Daneeqx K6",
+ 
+    "containerEnv": {},
+    "dependsOn": {
+        "ghcr.io/dhoeric/features/k6:1": {}
+    },
+
+    "installsAfter": []
+}

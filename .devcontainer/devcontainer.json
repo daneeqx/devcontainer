@@ -1,0 +1,51 @@
+{
+    "name": "Daneeqx container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "anthropic.claude-code",
+                "github.copilot",
+                "golang.Go",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-azuretools.vscode-docker",
+                "ms-kubernetes-tools.vscode-kubernetes-tools",
+                "eamodio.gitlens",
+                "redhat.vscode-yaml",
+                "mechatroner.rainbow-csv",
+                "humao.rest-client",
+                "EditorConfig.EditorConfig",
+                "usernamehw.errorlens",
+                "waderyan.gitblame",
+                "donjayamanne.githistory",
+                "davidanson.vscode-markdownlint",
+                "christian-kohler.npm-intellisense",
+            ]
+        }
+    },
+    "features": {
+        "./setup/common": {}
+    },
+    "mounts": [
+        {
+            "source": "/tmp/",
+            "target": "/tmp/",
+            "type": "bind"
+        },
+        {
+            "source": "${localWorkspaceFolder}/workspace",
+            "target": "/workspace",
+            "type": "bind"
+        },
+        {
+            "source": "${localEnv:HOME}/.ssh",
+            "target": "/workspace/.dotfiles/.ssh",
+            "type": "bind"
+        }
+    ]
+}

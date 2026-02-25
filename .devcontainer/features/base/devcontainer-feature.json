@@ -1,0 +1,14 @@
+{
+    "id": "daneeqx-base",
+    "version": "1.0.0",
+    "name": "Daneeqx base",
+    "containerEnv": {
+        "NETRC": "/etc/.netrc"
+    },
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": true
+        }
+    },
+
+}
