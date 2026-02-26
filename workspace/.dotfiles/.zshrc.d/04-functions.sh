@@ -27,6 +27,7 @@ extract() {
 }
 
 # Git: quick commit with message
+unalias gca 2>/dev/null
 gca() { git add -A && git commit -m "$*"; }
 
 # Docker: shell into container
