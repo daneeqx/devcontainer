@@ -2,9 +2,8 @@
     "id": "daneeqx-dotfiles",
     "version": "1.0.0",
     "name": "Daneeqx Dotfiles",
-
     "containerEnv": {},
     "dependsOn": {},
-
-    "installsAfter": []
+    "installsAfter": [],
+    "postStartCommand": "setup-dotfiles"
 }

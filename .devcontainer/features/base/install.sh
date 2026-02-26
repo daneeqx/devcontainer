@@ -4,20 +4,16 @@ apt-get upgrade -y
 apt-get install -y software-properties-common
 apt-get install -y ca-certificates gpg wget dnsutils curl iputils-ping netcat-openbsd neovim
 
-cat <<EOF | tee /etc/.netrc > /dev/null
-machine <YOUR GITLAB URL>
-    login <YOUR GITLAB USERNAME>
-    password <YOUR GITLAB PERSONAL ACCESS TOKEN>
-EOF
-chmod 644 /etc/.netrc
-
-cat <<EOF | tee -a /etc/gitconfig > /dev/null
-[url "git@<YOUR GITLAB URL>:"]
-	insteadOf = https://<YOUR GITLAB URL>/
-[url "git@<YOUR GITLAB URL>:"]
-	insteadOf = https://<YOUR GITLAB URL>/
-[user]
-    name = <YOUR NAME>
-    email = <YOUR EMAIL>
+touch /etc/gitconfig
+cat <<EOF > /etc/gitconfig
+[url "git@<YOUR_GITLAB_DOMAIN>:"]
+	insteadOf = https://<YOUR_GITLAB_DOMAIN>/
 EOF
 chmod 644 /etc/gitconfig
+
+cat <<EOF > /etc/.netrc
+machine <YOUR_GITLAB_DOMAIN>
+    login <YOUR_GITLAB_USERNAME>
+    password <YOUR_GITLAB_PERSONAL_ACCESS_TOKEN>
+EOF
+chmod 644 /etc/.netrc

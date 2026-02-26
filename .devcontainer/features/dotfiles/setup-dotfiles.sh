@@ -4,6 +4,9 @@ set -e
 CONFIG="/workspace/.dotfiles"
 HOME="/home/vscode"
 
+# Link .gitconfig
+ln -sf "$CONFIG/.gitconfig" "$HOME/.gitconfig"
+
 # Create directories (.ssh is mounted from host)
 mkdir -p "$CONFIG/.zshrc.d"
 
