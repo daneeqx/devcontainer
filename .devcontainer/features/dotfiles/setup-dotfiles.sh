@@ -21,5 +21,8 @@ grep -q "zshrc.d" "$HOME/.zshrc" 2>/dev/null || cat >> "$HOME/.zshrc" << 'EOF'
 for f in /workspace/.dotfiles/.zshrc.d/*.sh(N); do source "$f"; done
 EOF
 
+# Include user gitconfig
+[ -f "$CONFIG/.gitconfig" ] && git config --global include.path "$CONFIG/.gitconfig"
+
 # Run project post_start.sh if exists
-for f in /workspaces/*/post_start.sh; do [ -x "$f" ] && "$f"; done
+for f in /workspaces/*/post_start.sh; do [ -f "$f" ] && bash "$f"; done

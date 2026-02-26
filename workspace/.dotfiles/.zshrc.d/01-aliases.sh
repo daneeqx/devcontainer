@@ -38,3 +38,6 @@ alias h="history | tail -30"
 alias ports="ss -tlnp 2>/dev/null || lsof -iTCP -sTCP:LISTEN"
 alias myip="curl -s ifconfig.me"
 alias cls="clear"
+
+# Remove oh-my-zsh aliases that conflict with custom functions
+unalias gca 2>/dev/null
