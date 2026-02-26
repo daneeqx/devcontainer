@@ -7,5 +7,5 @@
         "./features/dotfiles": {}
     },
 
-    "postStartCommand": "rm -rf /home/vscode/.ssh && ln -s /workspace/.dotfiles/.ssh /home/vscode/.ssh"
+    "postStartCommand": "ln -sfn /workspace/.dotfiles/.ssh /home/vscode/.ssh"
 }

@@ -13,6 +13,8 @@
         "./features/kubectl-helm-minikube": {},
         "./features/nodejs": {},
         "./features/python": {},
-        "./features/ssh": {}
+        "./features/ssh": {},
+        "./features/k6": {},
+        "./features/protobuf": {}
     }
 }

@@ -2,6 +2,23 @@
     "id": "daneeqx-base",
     "version": "1.0.0",
     "name": "Daneeqx base",
+    "options": {
+        "gitlabDomain": {
+            "type": "string",
+            "default": "",
+            "description": "GitLab domain for git URL rewriting and .netrc"
+        },
+        "gitlabUsername": {
+            "type": "string",
+            "default": "",
+            "description": "GitLab username for .netrc authentication"
+        },
+        "gitlabToken": {
+            "type": "string",
+            "default": "",
+            "description": "GitLab personal access token for .netrc"
+        }
+    },
     "containerEnv": {
         "NETRC": "/etc/.netrc"
     },
@@ -9,5 +26,5 @@
         "ghcr.io/devcontainers/features/common-utils:2": {
             "configureZshAsDefaultShell": true
         }
-    },
+    }
 }

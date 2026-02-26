@@ -104,4 +104,24 @@ On container start, `post_start.sh` runs and symlinks persistent dotfiles (`.cla
 
 **Change tool versions:** edit the `version` field in the corresponding feature's `devcontainer-feature.json`.
 
+## GitLab Integration (Optional)
+
+The `base` feature supports optional GitLab configuration for git URL rewriting and `.netrc` authentication. Pass the options through `setup/common` in `devcontainer.json`:
+
+```json
+"features": {
+    "./setup/common": {
+        "gitlabDomain": "gitlab.example.com",
+        "gitlabUsername": "your-username",
+        "gitlabToken": "glpat-xxxxxxxxxxxx"
+    }
+}
+```
+
+When provided, this will:
+- Configure git to rewrite `https://gitlab.example.com/` URLs to `git@gitlab.example.com:` (SSH)
+- Create `/etc/.netrc` with credentials for `go get`, `pip install`, and other tools that use netrc authentication
+
+When omitted, no GitLab configuration is written.
+
 @daneeqx
