@@ -6,5 +6,7 @@
     "containerEnv": {},
     "dependsOn": {},
 
-    "installsAfter": []
+    "installsAfter": [],
+
+    "postStartCommand": "/usr/local/bin/setup-dotfiles"
 }
