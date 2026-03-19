@@ -3,6 +3,24 @@
     "name": "Common setup",
     "version": "1.0.0",
 
+    "options": {
+        "gitlabDomain": {
+            "type": "string",
+            "default": "",
+            "description": "GitLab domain for git credential setup"
+        },
+        "gitlabUsername": {
+            "type": "string",
+            "default": "",
+            "description": "GitLab username for git credential setup"
+        },
+        "gitlabToken": {
+            "type": "string",
+            "default": "",
+            "description": "GitLab access token for git credential setup"
+        }
+    },
+
     "dependsOn": {
         "./features/aws": {},
         "./features/base": {},
